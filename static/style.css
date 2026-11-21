@@ -1,1 +1,144 @@
+/* ===== GENERAL WEBSITE ===== */
+* {
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 50px 20px;
+    min-height: 100vh;
+    text-align: center;
+    color: #24304f;
+    background: linear-gradient(135deg, #eef2ff, #f5f0ff, #e6f7ff);
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+    color: #5145b8;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #6555c7;
+}
+
+/* ===== FORMS ===== */
+form {
+    background: rgba(255, 255, 255, 0.92);
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(91, 76, 180, 0.12);
+    border: 1px solid #e4e7ff;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 12px;
+    color: #39466b;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin-top: 8px;
+    border: 1px solid #d8def0;
+    border-radius: 10px;
+    outline: none;
+    background: #f9faff;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #8170e8;
+    box-shadow: 0 0 0 3px #ece9ff;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    background: linear-gradient(135deg, #7465df, #4c7be8);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(92, 82, 198, 0.25);
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #6256c9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #4336a9;
+}
+
+/* ===== PROFILE CARD ===== */
+.profile-card {
+    max-width: 480px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(91, 76, 180, 0.12);
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ddd6fe, #bfdbfe);
+    border-radius: 50%;
+    font-size: 45px;
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard-card {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(91, 76, 180, 0.10);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 12px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    form,
+    .profile-card,
+    .dashboard-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
